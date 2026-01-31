@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Loved Tech AU | Certified Refurbished & Shipped Local</title>
+    <style>
+        :root {
+            --apple-white: #F5F5F7;
+            --space-grey: #1d1d1f;
+            --warehouse-grey: #e5e5e5;
+            --trust-green: #2D5A27;
+            --text-main: #3A3A3A;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--apple-white);
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--warehouse-grey);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: -0.5px;
+            color: var(--space-grey);
+        }
+
+        .au-flag {
+            font-size: 0.9rem;
+            color: var(--trust-green);
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffffff, var(--apple-white));
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--space-grey);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #6e6e73;
+        }
+
+        .cta-button {
+            background-color: var(--space-grey);
+            color: #fff;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.02);
+        }
+
+        /* Proof of Life Gallery */
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #6e6e73;
+        }
+
+        .trust-gallery {
+            padding: 60px 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .gallery-label {
+            font-size: 0.8rem;
+            padding: 10px 5px;
+            color: #86868b;
+            text-align: center;
+        }
+
+        /* Features */
+        .promise {
+            background: var(--space-grey);
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .promise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .promise-item h3 {
+            margin: 15px 0;
+            color: #fff;
+        }
+
+        .promise-item p {
+            color: #a1a1a6;
+            font-size: 0.95rem;
+        }
+
+        .icon-circle {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Inventory */
+        .inventory {
+            padding: 80px 0;
+        }
+
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid var(--warehouse-grey);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            transition: border-color 0.3s ease;
+        }
+
+        .product-card:hover {
+            border-color: #d2d2d7;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .status-badge {
+            background: #f2f2f2;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #f5f5f7;
+            padding: 50px 0;
+            text-align: center;
+            border-top: 1px solid var(--warehouse-grey);
+        }
+
+        .footer-tag {
+            color: var(--trust-green);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-flex">
+            <div class="logo">PRE LOVED TECH AU</div>
+            <div class="au-flag">🇦🇺 Ships from Australia</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Premium Tech. <br>Without the Mystery.</h1>
+            <p>We skip the studio lights and the stock photos. You get real handheld proof of every device, tested and warrantied by Aussies.</p>
+            <a href="#shop" class="cta-button">View Current Inventory</a>
+        </div>
+    </section>
+
+    <section class="trust-gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Proof of Possession</h2>
+                <p>Live handheld shots from our dispatch hub today.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="iphone-handheld.png" alt="Handheld iPhone">
+                    <div class="gallery-label">iPhone 13 - Serial Verified</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="macbook-handheld.png" alt="Handheld MacBook">
+                    <div class="gallery-label">MacBook Air - Display Check</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="ipad-handheld.png" alt="Handheld iPad">
+                    <div class="gallery-label">iPad Pro - Battery Health: 94%</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="airpods-handheld.png" alt="Handheld AirPods">
+                    <div class="gallery-label">AirPods Pro - Sanitized & Tested</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promise">
+        <div class="container promise-grid">
+            <div class="promise-item">
+                <div class="icon-circle">🛡️</div>
+                <h3>12-Month Local Warranty</h3>
+                <p>If it fails, we fix or replace it. No shipping back overseas—we are right here in Australia.</p>
+            </div>
+            <div class="promise-item">
+                <div class="icon-circle">🔍</div>
+                <h3>50-Point Audit</h3>
+                <p>From water sensors to Bluetooth range, we test everything before it earns the "Certified" sticker.</p>
+            </div>
+            <div class="promise-item">
+                <div class="icon-circle">📦</div>
+                <h3>Express Dispatch</h3>
+                <p>Orders placed before 2 PM AEST ship the same day with Australia Post Express or StarTrack.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="inventory" id="shop">
+        <div class="container">
+            <div class="section-title">
+                <h2>Available Units</h2>
+                <p>Inspected and ready for a new home.</p>
+            </div>
+            <div class="inventory-grid">
+                <div class="product-card">
+                    <div class="status-badge">MINT CONDITION</div>
+                    <img src="iphone-12-pro.jpg" alt="iPhone 12 Pro">
+                    <h3>iPhone 12 Pro</h3>
+                    <p class="price">$749 AUD</p>
+                    <a href="#" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <div class="status-badge">EXCELLENT</div>
+                    <img src="macbook-air-m1.jpg" alt="MacBook Air M1">
+                    <h3>MacBook Air M1</h3>
+                    <p class="price">$1,149 AUD</p>
+                    <a href="#" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <div class="status-badge">LIKE NEW</div>
+                    <img src="ipad-pro.jpg" alt="iPad Pro">
+                    <h3>iPad Pro 11" (M1)</h3>
+                    <p class="price">$989 AUD</p>
+                    <a href="#" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="sell" style="padding: 80px 0; background-color: #fff; border-top: 1px solid #e5e5e5;">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <div class="status-badge" style="background: #eef9ee; color: #2D5A27;">WE BUY YOUR TECH</div>
+                    <h2 style="font-size: 2.5rem; margin: 10px 0;">Trade-In for Cash.</h2>
+                    <p style="color: #6e6e73; font-size: 1.1rem; margin-bottom: 25px;">
+                        Got an old iPhone or MacBook gathering dust? We offer competitive buy-back rates and free tracked shipping via Australia Post.
+                    </p>
+                    <div style="display: grid; gap: 15px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.2rem;">✅</span> <strong>Instant Assessment:</strong> Quotes within 4 business hours.
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.2rem;">✅</span> <strong>Zero-Cost Shipping:</strong> We email you a prepaid label.
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.2rem;">✅</span> <strong>Fast Payouts:</strong> Bank Transfer or PayPal as soon as it's tested.
+                        </div>
+                    </div>
+                </div>
+
+                <div style="flex: 1; min-width: 300px; background: #f9f9fb; padding: 30px; border-radius: 20px; border: 1px solid #e5e5e5;">
+                    <h3 style="margin-top: 0;">Request a Quote</h3>
+                    <form action="#" method="POST" style="display: grid; gap: 15px;">
+                        <input type="text" placeholder="Full Name" required style="padding: 12px; border: 1px solid #d2d2d7; border-radius: 8px;">
+                        <input type="email" placeholder="Email Address" required style="padding: 12px; border: 1px solid #d2d2d7; border-radius: 8px;">
+                        <select required style="padding: 12px; border: 1px solid #d2d2d7; border-radius: 8px; background: white;">
+                            <option value="" disabled selected>Device Type</option>
+                            <option value="iphone">iPhone</option>
+                            <option value="macbook">MacBook</option>
+                            <option value="ipad">iPad</option>
+                            <option value="other">Other Tech</option>
+                        </select>
+                        <input type="text" placeholder="Model (e.g. iPhone 13 Pro 256GB)" required style="padding: 12px; border: 1px solid #d2d2d7; border-radius: 8px;">
+                        <textarea placeholder="Briefly describe the condition (e.g. any scratches, battery % if known)" rows="4" style="padding: 12px; border: 1px solid #d2d2d7; border-radius: 8px;"></textarea>
+                        <button type="submit" class="cta-button" style="border: none; cursor: pointer;">Get My Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-tag">🇦🇺 100% AUSTRALIAN OWNED</div>
+            <p>Based in Australia. Shipping Australia-wide.</p>
+            <p style="font-size: 0.8rem; color: #86868b; margin-top: 20px;">&copy; 2026 Pre Loved Tech AU. <br> Not affiliated with Apple Inc.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
